@@ -197,14 +197,14 @@ footer {
 }
 
 .badge.disponible::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #22c55e; /* Un verde brillante y moderno */
-  border-radius: 50%;       /* Lo convierte en un círculo perfecto */
-  margin-right: 8px;       /* Espacio entre el círculo y el texto */
-  vertical-align: middle;  /* Lo alinea perfectamente con el texto */
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e; /* Un verde brillante y moderno */
+    border-radius: 50%;       /* Lo convierte en un círculo perfecto */
+    margin-right: 8px;       /* Espacio entre el círculo y el texto */
+    vertical-align: middle;  /* Lo alinea perfectamente con el texto */
 }
 
 
