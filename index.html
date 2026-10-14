@@ -12,7 +12,7 @@
     <header class="hero">
         <div class="hero-container">
             <span class="badge">Disponible para proyectos</span>
-            <h1>Lautaro Agustin Casal</h1> # 
+            <h1>Lautaro Agustin Casal</h1>
             <h2>Desarrollador / Estudiante de La UTN / TECNICATURA UNIVERSITARIA EN PROGRAMACION </h2>
             <p>Apasionado por la tecnología, la programación y el aprendizaje constante. Aquí comparto mis certificaciones y logros profesionales.</p>
             <div class="social-links">
@@ -33,9 +33,7 @@
             
             <!-- Certificado 1 -->
             <div class="card">
-                <div class="card-img">
-                    <!-- Asegúrate de guardar tu imagen en la carpeta 'img' -->
-                    
+                <div class="card-img" onclick="document.getElementById('modal-1').showModal()">
                     <img src="img/Captura Java Intermedio.png" alt="Certificado De Java">
                 </div>
                 <div class="card-content">
@@ -45,9 +43,18 @@
                 </div>
             </div>
 
+            <!-- Modal Certificado 1 -->
+            <dialog id="modal-1" class="certificado-modal">
+                <div class="modal-content">
+                    <img src="img/Captura Java Intermedio.png" alt="Certificado De Java en grande">
+                    <button onclick="document.getElementById('modal-1').close()">Cerrar ✕</button>
+                </div>
+            </dialog>
+
+
             <!-- Certificado 2 -->
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" onclick="document.getElementById('modal-2').showModal()">
                     <img src="img/Captura Certificado Fundamentos De Seguridad De La Informacion.png" alt="Certificado Fundamentos De Seguridad De La Informacion">
                 </div>
                 <div class="card-content">
@@ -57,10 +64,18 @@
                 </div>
             </div>
 
+            <!-- Modal Certificado 2 -->
+            <dialog id="modal-2" class="certificado-modal">
+                <div class="modal-content">
+                    <img src="img/Captura Certificado Fundamentos De Seguridad De La Informacion.png" alt="Certificado Seguridad en grande">
+                    <button onclick="document.getElementById('modal-2').close()">Cerrar ✕</button>
+                </div>
+            </dialog>
+
+
             <!-- Certificado 3 -->
-            
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" onclick="document.getElementById('modal-3').showModal()">
                     <img src="img/Certificado-Programación Desde Cero - Nivel Universidad [GRATIS]-Agustin Casal.png" alt="Certificado Fundamentos de La Programacion"> 
                 </div>
                 <div class="card-content">
@@ -70,20 +85,34 @@
                 </div>
             </div>
 
-
+            <!-- Modal Certificado 3 -->
+            <dialog id="modal-3" class="certificado-modal">
+                <div class="modal-content">
+                    <img src="img/Certificado-Programación Desde Cero - Nivel Universidad [GRATIS]-Agustin Casal.png" alt="Certificado Maxi Programa en grande">
+                    <button onclick="document.getElementById('modal-3').close()">Cerrar ✕</button>
+                </div>
+            </dialog>
 
 
             <!-- Certificado 4 -->
             <div class="card">
-                <div class="card-img">
+                <div class="card-img" onclick="document.getElementById('modal-4').showModal()">
                     <img src="img/Certificado de asistencia al Curso de Desarrollo con IA.png" alt="Taller de Desarrollo con Ia">
                 </div>
                 <div class="card-content">
                     <h3>Desarrollo con Inteligencia Artificial</h3>
-                    <p><strong>Emisor:</strong>Big School , MoureDev </p>
+                    <p><strong>Emisor:</strong> Big School , MoureDev </p>
                     <p>Aprendizaje sobre Las Bases De La Inteligencia Artifical Y Su Aplicacion En Desarrollo de Software</p>
                 </div>
             </div>
+
+            <!-- Modal Certificado 4 -->
+            <dialog id="modal-4" class="certificado-modal">
+                <div class="modal-content">
+                    <img src="img/Certificado de asistencia al Curso de Desarrollo con IA.png" alt="Certificado IA en grande">
+                    <button onclick="document.getElementById('modal-4').close()">Cerrar ✕</button>
+                </div>
+            </dialog>
 
         </div>
     </main>

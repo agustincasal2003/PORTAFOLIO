@@ -110,10 +110,12 @@ body {
 
 .card-img img {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover; 
     border-bottom: 1px solid #eee;
 }
+
+
 
 .card-content {
     padding: 20px;
@@ -141,4 +143,55 @@ footer {
     color: #888;
     font-size: 13px;
     margin-top: 60px;
+}
+/* Hace que el cursor indique que la imagen se puede abrir */
+.card-img {
+    cursor: pointer;
+}
+
+/* Estilos de la ventana flotante (Modal) */
+.certificado-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    background: transparent;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+/* Fondo oscuro detrás de la modal */
+.certificado-modal::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    display: block;
+}
+
+/* Botón flotante para cerrar la modal */
+.modal-content button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.modal-content button:hover {
+    background-color: #00adb5;
 }
